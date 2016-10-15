@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu\Menu.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{359AB2B2-E557-4885-8F6C-F26DBA4DD69F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlaMaKtora", "AlaMaKtora\AlaMaKtora.csproj", "{F336B8D2-5551-467F-8A2A-BCFF2BA52E82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{359AB2B2-E557-4885-8F6C-F26DBA4DD69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{359AB2B2-E557-4885-8F6C-F26DBA4DD69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{359AB2B2-E557-4885-8F6C-F26DBA4DD69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F336B8D2-5551-467F-8A2A-BCFF2BA52E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F336B8D2-5551-467F-8A2A-BCFF2BA52E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F336B8D2-5551-467F-8A2A-BCFF2BA52E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F336B8D2-5551-467F-8A2A-BCFF2BA52E82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
