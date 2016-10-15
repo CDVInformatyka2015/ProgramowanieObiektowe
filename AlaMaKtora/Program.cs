@@ -12,7 +12,7 @@ namespace AlaMaKtora
         {
             Console.Write("Podaj zdanie, czy cuś: ");
             slowo = readFromUser();
-            Console.Write("Wymieszać tablicę: ");
+            Console.Write("Wymieszać tablicę (0/1): ");
             string rand = readFromUser();
             int randum;
             Int32.TryParse(rand, out randum);
