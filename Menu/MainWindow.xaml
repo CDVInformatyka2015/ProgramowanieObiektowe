@@ -1,0 +1,29 @@
+﻿<Window x:Class="Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu"
+        mc:Ignorable="d"
+        Title="Menu" WindowState="Maximized">
+    <Grid Background="Blue">
+        <Viewbox HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock Name="textBlock" Foreground="White">
+                A problem has been detected and windows has been shutdown to prevent damage to your computer.<LineBreak></LineBreak><LineBreak></LineBreak>
+                DRIVER_IRQL_NOT_LES_OR_EQUAL<LineBreak></LineBreak><LineBreak></LineBreak>
+                If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again,<LineBreak></LineBreak>
+                follow these steps:<LineBreak></LineBreak><LineBreak></LineBreak>
+                Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your<LineBreak></LineBreak>
+                hardware or software manufacturer for any windows updates you might need.<LineBreak></LineBreak><LineBreak></LineBreak>
+                If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such<LineBreak></LineBreak>
+                as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer.<LineBreak></LineBreak><LineBreak></LineBreak>
+                Technical information:<LineBreak></LineBreak><LineBreak></LineBreak>
+                *** STOP: 0x0000<LineBreak></LineBreak><LineBreak></LineBreak>
+                *** xd.sys - Nobody care<LineBreak></LineBreak><LineBreak></LineBreak>
+                Beggining dump of physical memory<LineBreak></LineBreak><LineBreak></LineBreak>
+                Physical memory dumb complete.<LineBreak></LineBreak><LineBreak></LineBreak>
+                Contact your system administrator or medical doctor (psychology).<LineBreak></LineBreak>
+            </TextBlock>
+        </Viewbox>
+    </Grid>
+</Window>
