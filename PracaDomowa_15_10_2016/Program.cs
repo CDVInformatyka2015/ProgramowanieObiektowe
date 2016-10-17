@@ -32,6 +32,14 @@ namespace PracaDomowa_15_10_2016
         private static void writeInfo(bool status = false)
         {
             Console.Clear();
+            if (Enumerable.SequenceEqual(hasloArray, hasloEncoded))
+            {
+                Console.WriteLine("Gratulacje! Hasło to: " + haslo);
+                Console.WriteLine("Wyłącz program, by zakończyć grę lub naciśnij dowolny klawisz");
+                renderWisielec(szanseCounter);
+                Console.ReadKey();
+                start();
+            }
             if (status)
             {
                 Console.WriteLine("Trafiłeś!");
@@ -40,7 +48,12 @@ namespace PracaDomowa_15_10_2016
                 szanseCounter--;
                 if (szanseCounter < 1)
                 {
-                    Environment.Exit(0);
+                    Console.Clear();
+                    Console.WriteLine("Przegrałeś!");
+                    Console.WriteLine("Wyłącz program, by zakończyć grę lub naciśnij dowolny klawisz");
+                    renderWisielec(0);
+                    Console.ReadKey();
+                    start();
                 }
             }
             Console.WriteLine("Masz jeszcze " + szanseCounter + " prób!");
@@ -49,7 +62,27 @@ namespace PracaDomowa_15_10_2016
                 Console.Write(item + " ");
             }
             Console.WriteLine();
+            renderWisielec(szanseCounter);
             newChar();
+        }
+
+        private static void renderWisielec(int v)
+        {
+            switch (v)
+            {
+                case 0: Console.WriteLine(" _______\n |     |\n |     O\n |    /|\\\n |    / \\\n/|\\"); break;
+                case 1: Console.WriteLine(" _______\n |     |\n |     O\n |    /|\\\n |    /\n/|\\"); break;
+                case 2: Console.WriteLine(" _______\n |     |\n |     O\n |    /|\\\n |\n/|\\"); break;
+                case 3: Console.WriteLine(" _______\n |     |\n |     O\n |    /|\n |\n/|\\"); break;
+                case 4: Console.WriteLine(" _______\n |     |\n |     O\n |     |\n |\n/|\\"); break;
+                case 5: Console.WriteLine(" _______\n |     |\n |     O\n |\n |\n/|\\"); break;
+                case 6: Console.WriteLine(" _______\n |     |\n |\n |\n |\n/|\\"); break;
+                case 7: Console.WriteLine(" _______\n |\n |\n |\n |\n/|\\"); break;
+                case 8: Console.WriteLine("\n |\n |\n |\n |\n/|\\"); break;
+                case 9: Console.WriteLine("\n\n\n\n\n/|\\"); break;
+                case 10: Console.WriteLine("\n\n\n\n\n"); break;
+                    //default: Console.WriteLine("Czysto");
+            }
         }
 
         private static void newChar()
