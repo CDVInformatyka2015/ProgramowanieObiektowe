@@ -1,0 +1,22 @@
+﻿<Window x:Class="Wisielec.Views.getHasloDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wisielec"
+        xmlns:view="clr-namespace:Wisielec.Views"
+        xmlns:vm="clr-namespace:Wisielec.ViewModels"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        
+        Title="Podaj hasło" Height="90" Width="300">
+    <Grid>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" Width="75" Click="startButton_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192" TextAlignment="Center"/>
+    </Grid>
+</Window>
