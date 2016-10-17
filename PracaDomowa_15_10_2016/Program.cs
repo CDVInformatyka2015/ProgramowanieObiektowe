@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PracaDomowa_15_10_2016
 {
     class Program
     {
-        private static int szanseCounter = 11;
-        private static string haslo;
-        private static string[] hasloArray;
-        private static string[] hasloEncoded;
+        private static int _szanseCounter = 11;
+        private static string _haslo;
+        private static string[] _hasloArray;
+        private static string[] _hasloEncoded;
 
         static void Main(string[] args)
         {
@@ -23,20 +20,20 @@ namespace PracaDomowa_15_10_2016
         {
             Console.Clear();
             Console.Write("Podaj hasło: ");
-            haslo = readFromUser();
-            hasloArray = splitHaslo(haslo);
-            hasloEncoded = encodeHaslo(hasloArray);
+            _haslo = readFromUser();
+            _hasloArray = splitHaslo(_haslo);
+            _hasloEncoded = encodeHaslo(_hasloArray);
             writeInfo();
         }
 
         private static void writeInfo(bool status = false)
         {
             Console.Clear();
-            if (Enumerable.SequenceEqual(hasloArray, hasloEncoded))
+            if (Enumerable.SequenceEqual(_hasloArray, _hasloEncoded))
             {
-                Console.WriteLine("Gratulacje! Hasło to: " + haslo);
+                Console.WriteLine("Gratulacje! Hasło to: " + _haslo);
                 Console.WriteLine("Wyłącz program, by zakończyć grę lub naciśnij dowolny klawisz");
-                renderWisielec(szanseCounter);
+                renderWisielec(_szanseCounter);
                 Console.ReadKey();
                 start();
             }
@@ -45,8 +42,8 @@ namespace PracaDomowa_15_10_2016
                 Console.WriteLine("Trafiłeś!");
             } else
             {
-                szanseCounter--;
-                if (szanseCounter < 1)
+                _szanseCounter--;
+                if (_szanseCounter < 1)
                 {
                     Console.Clear();
                     Console.WriteLine("Przegrałeś!");
@@ -56,13 +53,13 @@ namespace PracaDomowa_15_10_2016
                     start();
                 }
             }
-            Console.WriteLine("Masz jeszcze " + szanseCounter + " prób!");
-            foreach (var item in hasloEncoded)
+            Console.WriteLine("Masz jeszcze " + _szanseCounter + " prób!");
+            foreach (var item in _hasloEncoded)
             {
                 Console.Write(item + " ");
             }
             Console.WriteLine();
-            renderWisielec(szanseCounter);
+            renderWisielec(_szanseCounter);
             newChar();
         }
 
@@ -95,11 +92,11 @@ namespace PracaDomowa_15_10_2016
         private static void checkTrue(string znak)
         {
             bool yay = false;
-            for (int i = 0; i < hasloArray.Length; i++)
+            for (int i = 0; i < _hasloArray.Length; i++)
             {
-                if (znak == hasloArray[i])
+                if (znak == _hasloArray[i])
                 {
-                    hasloEncoded[i] = hasloArray[i];
+                    _hasloEncoded[i] = _hasloArray[i];
                     yay = true;
                 }
             }
