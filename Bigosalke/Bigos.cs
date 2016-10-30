@@ -6,32 +6,32 @@ namespace Bigosalke
 {
     class Bigos
     {
-        protected string bigosUrl = "http://rafalkosik.com/wp-content/files/photos/091216_bigos_22.jpg";
-        protected string title = "Bigos";
+        protected string _bigosUrl = "http://rafalkosik.com/wp-content/files/photos/091216_bigos_22.jpg";
+        protected string _title = "Bigos";
 
-        protected float kapusta = 1.5F;
-        protected float kiszonaKapusta = 0;
-        protected float grzyby = 0.5F;
-        protected float suszoneGrzyby = 0;
-        protected float sliwki = 0.5F;
-        protected float suszoneSliwki = 0;
+        protected float _kapusta = 1.5F;
+        protected float _kiszonaKapusta = 0;
+        protected float _grzyby = 0.5F;
+        protected float _suszoneGrzyby = 0;
+        protected float _sliwki = 0.5F;
+        protected float _suszoneSliwki = 0;
 
-        protected int cebule = 2;
-        protected int krojoneCebule = 0;
-        protected int lyzkiOleju = 2;
-        protected int petoKielbasy = 1;
-        protected int krojonePetoKielbasy = 0;
-        protected int wolowina = 250;
-        protected int krojonaWolowina = 0;
-        protected int boczek = 100;
-        protected int krojonyBoczek = 0;
-        protected int czerwoneWino = 250;
-        protected int lyzkiKoncentratu = 3;
-        protected int liscieLaurowe = 3;
-        protected int kminek = 1;
-        protected int majeranek = 1;
+        protected int _cebule = 2;
+        protected int _krojoneCebule = 0;
+        protected int _lyzkiOleju = 2;
+        protected int _petoKielbasy = 1;
+        protected int _krojonePetoKielbasy = 0;
+        protected int _wolowina = 250;
+        protected int _krojonaWolowina = 0;
+        protected int _boczek = 100;
+        protected int _krojonyBoczek = 0;
+        protected int _czerwoneWino = 250;
+        protected int _lyzkiKoncentratu = 3;
+        protected int _liscieLaurowe = 3;
+        protected int _kminek = 1;
+        protected int _majeranek = 1;
 
-        protected bool sol_i_pieprz = true;
+        protected bool _sol_i_pieprz = true;
 
         public Bigos()
         {
@@ -39,14 +39,14 @@ namespace Bigosalke
 
         protected void zacznij()
         {
-            Console.WriteLine(title);
+            Console.WriteLine(_title);
             Thread.Sleep(1000);
             writeLine("Na początek kisimy kapustę!", true);
             kiszenieKapusty();
             writeLine("Teraz suszymy grzyby oraz sliwki!!!", true);
             suszenieGrzybow();
             suszenieSliwek();
-            if (petoKielbasy>0 && wolowina>0)
+            if (_petoKielbasy>0 && _wolowina>0)
             {
                 writeLine("Teraz czas pociac kielbasę, cebulę, wolowinę i boczek!", true);
                 cutKielbasa();
@@ -64,66 +64,66 @@ namespace Bigosalke
             writeLine("Odstaw na kilka dni. Niech dojrzeje <3", true);
             loading("ODSTAWIENIE");
             writeLine("Gotowe! Smacznego bigosu!", false);
-            pokazBigos(bigosUrl);
+            pokazBigos(_bigosUrl);
         }
 
         private void cutWolowina()
         {
-            krojonaWolowina = wolowina;
+            _krojonaWolowina = _wolowina;
             loading("Krojenie wolowiny");
         }
 
         private void kiszenieKapusty()
         {
-            kiszonaKapusta = kapusta;
+            _kiszonaKapusta = _kapusta;
             loading("Kiszenie kapusty");
         }
 
         private void suszenieGrzybow()
         {
-            suszoneGrzyby = grzyby;
+            _suszoneGrzyby = _grzyby;
             loading("Suszenie grzybów");
         }
 
         private void suszenieSliwek()
         {
-            suszoneSliwki = sliwki;
+            _suszoneSliwki = _sliwki;
             loading("Suszenie śliwek");
         }
 
         private void cutKielbasa()
         {
-            krojonePetoKielbasy = petoKielbasy;
+            _krojonePetoKielbasy = _petoKielbasy;
             loading("Krojenie pęta kiełbasy");
         }
 
         private void cutCebula()
         {
-            krojoneCebule = cebule;
+            _krojoneCebule = _cebule;
             loading("Krojenie cebuli");
         }
 
         private void cutBoczek()
         {
-            krojonaWolowina = wolowina;
+            _krojonaWolowina = _wolowina;
             loading("Krojenie wołowiny");
         }
 
         private void addDoGarnka()
         {
-            Console.WriteLine("+ Kiszona kapusta: " + kiszonaKapusta + "kg");
-            Console.WriteLine("+ Krojone pęto kiełbasy: " + krojonePetoKielbasy + "kg");
-            Console.WriteLine("+ Suszone grzyby: " + suszoneGrzyby + " garści");
-            Console.WriteLine("+ Suszone śliwki: " + suszoneSliwki + " garści");
-            Console.WriteLine("+ Krojone cebule: " + krojoneCebule);
-            Console.WriteLine("+ Olej: " + lyzkiOleju + " łyżki");
-            Console.WriteLine("+ Krojona Wołowina: " + krojonyBoczek + "kg");
-            Console.WriteLine("+ Czerwone Wino: " + czerwoneWino + "ml");
-            Console.WriteLine("+ Łyżki koncentratu: " + lyzkiKoncentratu + " łyżki");
-            Console.WriteLine("+ Liście laurowe: " + liscieLaurowe);
-            Console.WriteLine("+ kminek: " + kminek);
-            Console.WriteLine("+ Majeranek: " + majeranek);
-            if (sol_i_pieprz)
+            Console.WriteLine("+ Kiszona kapusta: " + _kiszonaKapusta + "kg");
+            Console.WriteLine("+ Krojone pęto kiełbasy: " + _krojonePetoKielbasy + "kg");
+            Console.WriteLine("+ Suszone grzyby: " + _suszoneGrzyby + " garści");
+            Console.WriteLine("+ Suszone śliwki: " + _suszoneSliwki + " garści");
+            Console.WriteLine("+ Krojone cebule: " + _krojoneCebule);
+            Console.WriteLine("+ Olej: " + _lyzkiOleju + " łyżki");
+            Console.WriteLine("+ Krojona Wołowina: " + _krojonyBoczek + "kg");
+            Console.WriteLine("+ Czerwone Wino: " + _czerwoneWino + "ml");
+            Console.WriteLine("+ Łyżki koncentratu: " + _lyzkiKoncentratu + " łyżki");
+            Console.WriteLine("+ Liście laurowe: " + _liscieLaurowe);
+            Console.WriteLine("+ kminek: " + _kminek);
+            Console.WriteLine("+ Majeranek: " + _majeranek);
+            if (_sol_i_pieprz)
             {
                 Console.WriteLine("+ Sól i pieprz");
             }
