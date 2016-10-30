@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlaMaKtora", "AlaMaKtora\Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracaDomowa_15_10_2016", "PracaDomowa_15_10_2016\PracaDomowa_15_10_2016.csproj", "{5EF8DC77-CF00-4428-A5C2-66B6231DCBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisielec", "D:\Projekty\SiSzarp\Wisielec\Wisielec.csproj", "{6060B1E6-56F4-4D58-B71A-E51EC8690844}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array_30_10_2016", "Array_30_10_2016\Array_30_10_2016.csproj", "{1143BC00-802D-41CE-B148-E4768D0D894F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{5EF8DC77-CF00-4428-A5C2-66B6231DCBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EF8DC77-CF00-4428-A5C2-66B6231DCBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EF8DC77-CF00-4428-A5C2-66B6231DCBFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6060B1E6-56F4-4D58-B71A-E51EC8690844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6060B1E6-56F4-4D58-B71A-E51EC8690844}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6060B1E6-56F4-4D58-B71A-E51EC8690844}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6060B1E6-56F4-4D58-B71A-E51EC8690844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1143BC00-802D-41CE-B148-E4768D0D894F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1143BC00-802D-41CE-B148-E4768D0D894F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1143BC00-802D-41CE-B148-E4768D0D894F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1143BC00-802D-41CE-B148-E4768D0D894F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
