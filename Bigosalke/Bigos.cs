@@ -49,7 +49,7 @@ namespace Bigosalke
             loading("GOTOWANIE");
             writeLine("Odstaw na kilka dni. Niech dojrzeje <3", true);
             loading("ODSTAWIENIE");
-            writeLine("Gotowe! Smacznego bigosu!", true);
+            writeLine("Gotowe! Smacznego bigosu!", false);
             pokazBigos();
         }
 
@@ -128,6 +128,7 @@ namespace Bigosalke
         {
             Console.ReadKey();
             Process.Start("http://rafalkosik.com/wp-content/files/photos/091216_bigos_22.jpg");
+            Console.ReadKey();
         }
 
         private void writeLine(string v, bool clear = false)
