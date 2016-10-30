@@ -25,7 +25,6 @@ namespace Array_30_10_2016
                     break;
                 }
 
-                //string[] temp = new string[i+1];
                 _tablica = saveTable(_tablica);
                 _tablica[i] = key;
                 i++;
@@ -42,12 +41,6 @@ namespace Array_30_10_2016
                 wroc[item.index] = item.value;
             }
             return wroc;
-        }
-
-        private static void writeProblem(string v)
-        {
-            Console.WriteLine("\n===\n" + v + "\n===\n");
-            Console.ReadKey();
         }
 
         private static void readTable(string[] _tablica)
