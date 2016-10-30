@@ -10,7 +10,8 @@ namespace Bigosalke
     {
         static void Main(string[] args)
         {
-            Bigos bigos = new Bigos();
+            //Bigos bigos = new Bigos();
+            WeganBigos bigos = new WeganBigos();
         }
     }
 }

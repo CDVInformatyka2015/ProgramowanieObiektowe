@@ -6,43 +6,57 @@ namespace Bigosalke
 {
     class Bigos
     {
-        private float kapusta = 1.5F;
-        private float kiszonaKapusta = 0;
-        private float grzyby = 0.5F;
-        private float suszoneGrzyby = 0;
-        private float sliwki = 0.5F;
-        private float suszoneSliwki = 0;
+        protected string bigosUrl = "http://rafalkosik.com/wp-content/files/photos/091216_bigos_22.jpg";
+        protected string title = "Bigos";
 
-        private int cebule = 2;
-        private int krojoneCebule = 0;
-        private int lyzkiOleju = 2;
-        private int petoKielbasy = 1;
-        private int krojonePetoKielbasy = 0;
-        private int wolowina = 250;
-        private int krojonaWolowina = 0;
-        private int boczek = 100;
-        private int krojonyBoczek = 0;
-        private int czerwoneWino = 250;
-        private int lyzkiKoncentratu = 3;
-        private int liscieLaurowe = 3;
-        private int kminek = 1;
-        private int majeranek = 1;
+        protected float kapusta = 1.5F;
+        protected float kiszonaKapusta = 0;
+        protected float grzyby = 0.5F;
+        protected float suszoneGrzyby = 0;
+        protected float sliwki = 0.5F;
+        protected float suszoneSliwki = 0;
 
-        private bool sol_i_pieprz = true;
+        protected int cebule = 2;
+        protected int krojoneCebule = 0;
+        protected int lyzkiOleju = 2;
+        protected int petoKielbasy = 1;
+        protected int krojonePetoKielbasy = 0;
+        protected int wolowina = 250;
+        protected int krojonaWolowina = 0;
+        protected int boczek = 100;
+        protected int krojonyBoczek = 0;
+        protected int czerwoneWino = 250;
+        protected int lyzkiKoncentratu = 3;
+        protected int liscieLaurowe = 3;
+        protected int kminek = 1;
+        protected int majeranek = 1;
+
+        protected bool sol_i_pieprz = true;
 
         public Bigos()
         {
-            Console.WriteLine("BIGOS");
+        }
+
+        protected void zacznij()
+        {
+            Console.WriteLine(title);
             Thread.Sleep(1000);
-            writeLine("Na początek kisimy kapustę!",true);
+            writeLine("Na początek kisimy kapustę!", true);
             kiszenieKapusty();
             writeLine("Teraz suszymy grzyby oraz sliwki!!!", true);
             suszenieGrzybow();
             suszenieSliwek();
-            writeLine("Teraz czas pociac kielbasę, cebulę, wolowinę!", true);
-            cutKielbasa();
+            if (petoKielbasy>0 && wolowina>0)
+            {
+                writeLine("Teraz czas pociac kielbasę, cebulę, wolowinę i boczek!", true);
+                cutKielbasa();
+                cutBoczek();
+                cutWolowina();
+            } else
+            {
+                writeLine("Teraz czas pociac cebulę!", true);
+            }
             cutCebula();
-            cutWolowina();
             writeLine("Teraz czas na dodanie wszystkiego!", true);
             addDoGarnka();
             writeLine("Więc skoro już wszystko jest w garze to gotujemy! <3", true);
@@ -50,7 +64,13 @@ namespace Bigosalke
             writeLine("Odstaw na kilka dni. Niech dojrzeje <3", true);
             loading("ODSTAWIENIE");
             writeLine("Gotowe! Smacznego bigosu!", false);
-            pokazBigos();
+            pokazBigos(bigosUrl);
+        }
+
+        private void cutWolowina()
+        {
+            krojonaWolowina = wolowina;
+            loading("Krojenie wolowiny");
         }
 
         private void kiszenieKapusty()
@@ -83,7 +103,7 @@ namespace Bigosalke
             loading("Krojenie cebuli");
         }
 
-        private void cutWolowina()
+        private void cutBoczek()
         {
             krojonaWolowina = wolowina;
             loading("Krojenie wołowiny");
@@ -124,10 +144,10 @@ namespace Bigosalke
             //Console.ReadKey();
         }
 
-        private void pokazBigos()
+        private void pokazBigos(string url)
         {
             Console.ReadKey();
-            Process.Start("http://rafalkosik.com/wp-content/files/photos/091216_bigos_22.jpg");
+            Process.Start(url);
         }
 
         private void writeLine(string v, bool clear = false)
