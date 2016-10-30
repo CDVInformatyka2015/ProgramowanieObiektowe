@@ -128,7 +128,6 @@ namespace Bigosalke
         {
             Console.ReadKey();
             Process.Start("http://rafalkosik.com/wp-content/files/photos/091216_bigos_22.jpg");
-            Console.ReadKey();
         }
 
         private void writeLine(string v, bool clear = false)
