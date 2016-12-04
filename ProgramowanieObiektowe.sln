@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigosalke", "Bigosalke\Bigo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfejsy_12.11.2016", "Interfejsy_12.11.2016\Interfejsy_12.11.2016.csproj", "{1159CF9D-9B52-47CF-8664-7F5FB8F40D06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{4065C2DE-C626-4360-8357-30306D3ABA01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1159CF9D-9B52-47CF-8664-7F5FB8F40D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1159CF9D-9B52-47CF-8664-7F5FB8F40D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1159CF9D-9B52-47CF-8664-7F5FB8F40D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4065C2DE-C626-4360-8357-30306D3ABA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4065C2DE-C626-4360-8357-30306D3ABA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4065C2DE-C626-4360-8357-30306D3ABA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4065C2DE-C626-4360-8357-30306D3ABA01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
